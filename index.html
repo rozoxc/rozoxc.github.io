@@ -1,81 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+CTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJ9TR5T9S2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-QJ9TR5T9S2');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AIHxInc | Terminal</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/fav-icon.png" />
     <style>
+      @media screen and (max-width: 600px) {
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
+          font-size: 14px;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            margin-top: 50px;
+        #terminal {
+          margin-bottom: 50px;
         }
-        h1 {
-            color: #333333;
+        #command {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          background-color: #000;
         }
-        p {
-            color: #666666;
-        }
+      }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Welcome to My Simple HTML Page</h1>
-        <p>This is a paragraph of text in a simple HTML page. You can edit this file to add your own content.</p>
-        <p>Here's a link to <a href="https://www.example.com">Example.com</a>.</p>
-        <p>You can also add images:</p>
-        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+  </head>
+  <body>
+    <div id="terminal">
+      <a id="before"></a>
     </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            margin-top: 50px;
-        }
-        h1 {
-            color: #333333;
-        }
-        p {
-            color: #666666;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Welcome to My Simple HTML Page</h1>
-        <p>This is a paragraph of text in a simple HTML page. You can edit this file to add your own content.</p>
-        <p>Here's a link to <a href="https://www.example.com">Example.com</a>.</p>
-        <p>You can also add images:</p>
-        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+    <div id="command" onclick="$('texter').focus();">
+      <textarea
+        type="text"
+        id="texter"
+        onkeyup="typeIt(this, event)"
+        onkeydown="typeIt(this, event); 
+                   moveIt(this.value.length, event)"
+        onkeypress="typeIt(this, event);"
+        autofocus
+      ></textarea>
+      <div id="liner">
+        <span id="typer"></span><b class="cursor" id="cursor">█</b>
+      </div>
     </div>
-</body>
+    <script src="disableMouse.js"></script>
+    <script src="js/caret.js"></script>
+    <script src="js/commands.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
 

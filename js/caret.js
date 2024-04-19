@@ -1,5 +1,4 @@
-
-n $(elid) {
+fonction $(elid) {
     return document.getElementById(elid);
   }
   

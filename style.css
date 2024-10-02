@@ -1,0 +1,88 @@
+* {
+	*     margin: 0;
+	*         padding: 0;
+	*             box-sizing: border-box;
+	*             }
+	*
+	*             body {
+		*                 font-family: Arial, sans-serif;
+		*                     background-color: #f4f4f9;
+		*                         color: #333;
+		*                             display: flex;
+		*                                 justify-content: center;
+		*                                     align-items: center;
+		*                                         flex-direction: column;
+		*                                         }
+		*
+		*                                         .header-section {
+			*                                             text-align: center;
+			*                                                 margin-top: 30px;
+			*                                                     margin-bottom: 50px;
+			*                                                     }
+			*
+			*                                                     h1 {
+				*                                                         font-size: 2.5rem;
+				*                                                             color: #333;
+				*                                                             }
+				*
+				*                                                             p {
+					*                                                                 font-size: 1.2rem;
+					*                                                                     color: #666;
+					*                                                                     }
+					*
+					*                                                                     .image-container {
+						*                                                                         margin-top: 20px;
+						*                                                                         }
+						*
+						*                                                                         .image-container img {
+							*                                                                             width: 150px;
+							*                                                                                 height: 150px;
+							*                                                                                     border-radius: 50%;
+							*                                                                                         border: 3px solid #333;
+							*                                                                                         }
+							*
+							*                                                                                         main {
+								*                                                                                             max-width: 900px;
+								*                                                                                                 margin: 0 auto;
+								*                                                                                                 }
+								*
+								*                                                                                                 #about {
+									*                                                                                                     margin: 40px 0;
+									*                                                                                                         text-align: center;
+									*                                                                                                         }
+									*
+									*                                                                                                         .projects-skills {
+										*                                                                                                             display: flex;
+										*                                                                                                                 justify-content: space-between;
+										*                                                                                                                     margin-top: 50px;
+										*                                                                                                                     }
+										*
+										*                                                                                                                     .projects, .skills {
+											*                                                                                                                         width: 45%;
+											*                                                                                                                         }
+											*
+											*                                                                                                                         .projects ul, .skills ul {
+												*                                                                                                                             list-style: none;
+												*                                                                                                                             }
+												*
+												*                                                                                                                             .projects ul li, .skills ul li {
+													*                                                                                                                                 margin-bottom: 10px;
+													*                                                                                                                                 }
+													*
+													*                                                                                                                                 .projects a, .skills a {
+														*                                                                                                                                     color: #007bff;
+														*                                                                                                                                         text-decoration: none;
+														*                                                                                                                                         }
+														*
+														*                                                                                                                                         .projects a:hover, .skills a:hover {
+															*                                                                                                                                             text-decoration: underline;
+															*                                                                                                                                             }
+															*
+															*                                                                                                                                             footer {
+																*                                                                                                                                                 text-align: center;
+																*                                                                                                                                                     margin-top: 50px;
+																*                                                                                                                                                         padding: 20px;
+																*                                                                                                                                                             background-color: #f0f0f0;
+																*                                                                                                                                                                 border-top: 1px solid #ddd;
+																*                                                                                                                                                                 }
+																*
